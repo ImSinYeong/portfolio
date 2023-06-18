@@ -296,6 +296,17 @@
   .codings h3 {
     font-size: 24px;
   }
+  .slick-prev::before,
+  .slick-next::before {
+    display: none;
+  }
+  .slide-content p {
+    bottom: -5px;
+    background-color: #44444480;
+  }
+  .slick-dots {
+    margin-bottom: 10px;
+  }
   /* ########## Section: project ########## */
   .project-inner {
     width: 100%;
