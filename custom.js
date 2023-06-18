@@ -1,4 +1,7 @@
 $(function(){
+  //
+  new WOW().init();
+  
   //nav
   $('.trigger').click(function(){
     $(this).toggleClass('active');
