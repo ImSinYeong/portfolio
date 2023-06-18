@@ -1,3 +1,208 @@
+@media (min-width: 769px) and (max-width: 1299px) {
+  /* ########## Header ########## */
+  .header-inner {
+    width: 100%;
+    padding: 15px;
+  }
+  /* ########## Section: intro ########## */
+  .intro-inner {
+    width: 100%;
+    padding: 15px;
+  }
+  .intro-inner .text {
+    left: 15px;
+  }
+  .intro-image {
+    right: 15px;
+  }
+  /* ########## Section: about ########## */
+  .about-inner {
+    width: 100%;
+  }
+  .edu-ex-inner {
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+  .edu-ex-inner > div {
+    float: left;
+    width: 50%;
+  }
+  .edu-ex-inner > div:nth-child(1) {
+    width: 50%;
+  }
+  .edu-ex-inner > div:nth-child(2) {
+    width: 50%;
+  }
+  .edu-ex-inner > div:nth-child(1) {
+    padding-left: 0;
+  }
+  .edu-ex-inner h3 {
+    font-size: 20px;
+  }
+  .edu-ex-inner ul li div {
+    float: none;
+  }
+  .edu-ex-inner .left {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+  }
+  .edu-ex-inner .left p {
+    display: inline;
+    font-size: 14px;
+  }
+  .edu-ex-inner .left br {
+    display: none;
+  }
+  .edu-ex-inner .left:after {
+    display: none;
+  }
+  .edu-ex-inner .left:before {
+    display: none;
+  }
+  .edu-ex-inner .right {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  .edu-ex-inner .right p {
+    font-size: 15px;
+  }
+  .edu-ex p {
+    line-height: 1.2em;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  /* ########## Section: about ########## */
+  .headshot {
+    margin-left: 15px;
+    text-align: center;
+    width: 20%;
+  }
+  .info {
+    width: 100%;
+  }
+  .about-text {
+    float: left;
+    padding-left: 0;
+    margin-left: 42px;
+  }
+  /* ########## Section: skill ########## */
+  .skill-inner {
+    width: 100%;
+    padding: 0 15px;
+  }
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .skill-desc {
+    height: auto;
+    width: 32%;
+    margin-right: 2%;
+  }
+  .skill-desc:nth-child(3),
+  .skill-desc:nth-child(6) {
+    margin-right: 0;
+  }
+  .skill-desc:nth-child(4) {
+    margin-right: 2%;
+  }
+  /* ########## Section: mobile ########## */
+  /* ########## Section: web ########## */
+  .web-inner {
+    width: 100%;
+  }
+  .tab-img {
+    float: none;
+    width: 100%;
+    margin: auto;
+  }
+  .img1 {
+    display: none;
+  }
+  .img2 {
+    position: static;
+    width: 700px;
+    height: 360px;
+    margin: auto;
+  }
+  .tab-desc {
+    float: none;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+  /* ########## Section: coding ########## */
+  .coding-inner {
+    width: 100%;
+  }
+  .codings {
+    width: 100%;
+    float: none;
+  }
+  /* ########## Section: project ########## */
+  .project-inner {
+    width: 100%;
+  }
+  .project-contents {
+    flex-wrap: wrap;
+  }
+  .project-content {
+    width: 100%;
+    margin-left: 0;
+  }
+  .project-content img {
+    float: left;
+    width: 50%;
+    object-fit: cover;
+  }
+  .project-content div {
+    float: left;
+    width: 50%;
+    text-align: left;
+    padding-left: 40px;
+  }
+  .project-content div p {
+    margin: 0;
+  }
+  .project-content:first-child {
+    border: none;
+  }
+  /* ########## Section: skill ########## */
+  .skill-inner {
+    width: 100%;
+    padding: 100px 15px 0;
+  }
+  .introduces h2,
+  .my-part > h2 {
+    margin-bottom: 30px;
+  }
+  .access {
+    margin-top: 20px;
+  }
+  /* ########## Section: contact ########## */
+  .contact-inner {
+    width: 100%;
+    padding: 0 15px;
+  }
+  .contact-inner h1 {
+    font-size: 58px;
+  }
+  /* ########## illustrator.html ########## */
+  .project-illustrator,
+  .project-react {
+    width: 100%;
+  }
+  .project-react {
+    padding-bottom: 0;
+  }
+  /* ########## react.html ########## */
+  .project-react {
+    width: 100%;
+  }
+}
+
 @media (max-width: 768px) {
   /* Default CSS */
   body {
@@ -143,9 +348,6 @@
   .about-text p {
     width: 100%;
   }
-  .about-text button {
-    margin-bottom: 50px;
-  }
   .edu-ex-inner {
     width: 100%;
     padding: 0;
@@ -161,8 +363,8 @@
   .edu-ex-inner > div:nth-child(2) {
     width: 100%;
   }
-  .edu-ex-inner > div:nth-child(1){
-    padding-left:0
+  .edu-ex-inner > div:nth-child(1) {
+    padding-left: 0;
   }
   .edu-ex-inner h3 {
     font-size: 20px;

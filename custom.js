@@ -1,6 +1,6 @@
-$(function(){
+$(document).ready((function(){
   //wow
-  new WOW().init();
+  // new WOW().init();
   
   //nav
   $('.trigger').click(function(){
@@ -23,18 +23,25 @@ $(function(){
 
   //coding-slide
   $('.slide').slick({
-    dots: true,
+    dots: false,
     infinite: true,
     speed: 300,
     slidesToShow: 2,
-    slidesToScroll: 2,
+    slidesToScroll: 1,
+    arrows:true,
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 1299,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 700,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2,
-          infinite: true
+          slidesToScroll: 1,
         }
       },
       {
@@ -70,3 +77,4 @@ $(function(){
   });
 
 })
+)
