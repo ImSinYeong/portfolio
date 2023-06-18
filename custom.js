@@ -20,7 +20,7 @@ $(function(){
 
   //coding-slide
   $('.slide').slick({
-    dots: false,
+    dots: true,
     infinite: true,
     speed: 300,
     slidesToShow: 2,
