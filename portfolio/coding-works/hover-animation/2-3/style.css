@@ -1,0 +1,48 @@
+body {
+  background: #000;
+  color: #fff;
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  text-decoration: none;
+  color: transparent;
+  font-size: 10em;
+  font-weight: 600;
+  -webkit-text-stroke: 1px #fff;
+  position: relative;
+  transition: 0.3s;
+}
+.btn:before,
+.btn:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: attr(data-text);
+  transition: 0.3s;
+  opacity: 0;
+}
+.btn:before {
+  color: royalblue;
+  -webkit-text-stroke: 1px transparent;
+}
+.btn:after {
+  color: crimson;
+  -webkit-text-stroke: 1px transparent;
+}
+.btn:hover {
+  color: #fff;
+}
+.btn:hover:before {
+  left: 10px;
+  top: -10px;
+  opacity: 1;
+}
+.btn:hover:after {
+  left: 20px;
+  top: -20px;
+  opacity: 1;
+}
