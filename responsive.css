@@ -161,6 +161,9 @@
   .edu-ex-inner > div:nth-child(2) {
     width: 100%;
   }
+  .edu-ex-inner > div:nth-child(1){
+    padding-left:0
+  }
   .edu-ex-inner h3 {
     font-size: 20px;
   }
