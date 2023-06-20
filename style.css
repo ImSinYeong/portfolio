@@ -172,10 +172,10 @@ header {
   border-radius: 30px;
 }
 .intro-image {
-  width: 602px;
+  width: 549px;
   position: absolute;
   right: 0;
-  top: 59%;
+  top: 87%;
   transform: translateY(-50%);
 }
 .intro-image img {
