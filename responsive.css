@@ -178,9 +178,6 @@
   .my-part > h2 {
     margin-bottom: 30px;
   }
-  .access {
-    margin-top: 20px;
-  }
   /* ########## Section: contact ########## */
   .contact-inner {
     width: 100%;
@@ -637,7 +634,7 @@
   .my-part p {
     padding: 0 0 15px 0;
   }
-  .project-react .access {
-    display: none;
+  .components {
+    padding-bottom: 30px;
   }
 }
