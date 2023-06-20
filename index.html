@@ -23,10 +23,12 @@
       crossorigin="anonymous"
     ></script>
     <!-- Wow -->
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    <link rel="stylesheet" href="./plugin/wow/animate.css">
+    <script src="./plugin/wow/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+
     <!-- Slick -->
     <link rel="stylesheet" href="./plugin/slick/slick.css" />
     <link rel="stylesheet" href="./plugin/slick/slick-theme.css" />
@@ -64,7 +66,7 @@
       <!-- Section-intro -->
       <section class="intro" id="intro">
         <div class="intro-inner">
-          <div class="text wow animate__animated animate__fadeInLeft"  >
+          <div class="text wow fadeInLeft"  >
             <p>결과물을 만드며 행복함을 느끼는</p>
             <h1>web-publisher</h1>
             <h3>임신영</h3>
@@ -73,15 +75,15 @@
             <span>#책임감강한</span>
             <span>#성장하는</span>
           </div>
-          <div class="intro-image  wow animate__animated animate__fadeInRight">
-            <img src="./images/tem.svg">
+          <div class="intro-image">
+            <img class="wow fadeInUp" data-wow-offset="10" src="./images/tem.svg">
           </div>
         </div>
       </section>
       <!-- Section-about -->
-      <section class="about" id="about">
+      <section class="about"  id="about">
         <div class="about-inner">
-          <div class="info">
+          <div class="info wow fadeInUp" data-wow-offset="30">
             <div class="headshot"><img src="./images/headshot.jpg" /></div>
             <div class="about-text">
               <span>web-publisher</span>
@@ -95,7 +97,7 @@
               <p>웹접근성을 중요시합니다.</p>
             </div>
           </div>
-          <div class="edu-ex">
+          <div class="edu-ex  wow fadeInUp" data-wow-offset="30">
             <div class="edu-ex-inner">
               <div class="education">
                 <h3>Education</h3>
@@ -194,8 +196,8 @@
       <!-- Section-skill -->
       <section class="skill" id="skill">
         <div class="skill-inner">
-          <h1 class="headline-share">SKILL</h1>
-          <div class="skills">
+          <h1 class="headline-share wow fadeInUp" data-wow-offset="30">SKILL</h1>
+          <div class="skills  wow fadeInUp" data-wow-offset="30">
             <div class="skill-desc">
               <h3>html</h3>
               <p>
@@ -307,8 +309,8 @@
       <!-- Section-web -->
       <section class="web" id="web">
         <div class="web-inner">
-          <h1 class="headline-share">WEB UI & PUBLISHING PORTFOLIO</h1>
-          <div class="web-content">
+          <h1 class="headline-share wow fadeInUp" data-wow-offset="30">WEB UI & PUBLISHING PORTFOLIO</h1>
+          <div class="web-content wow fadeInUp" data-wow-offset="30">
             <input type="radio" name="tabmenu" id="tab1" checked />
             <input type="radio" name="tabmenu" id="tab2" />
             <!-- <input type="radio" name="tabmenu" id="tab3" /> -->
@@ -447,8 +449,8 @@
       <!-- Section-coding -->
       <section class="coding" id="coding">
         <div class="coding-inner">
-          <h1 class="headline-share">PRACTICAL PUBLICHING</h1>
-          <div class="coding-content">
+          <h1 class="headline-share  wow fadeInUp" data-wow-offset="30">PRACTICAL PUBLICHING</h1>
+          <div class="coding-content wow fadeInUp" data-wow-offset="30">
             <div class="card-ui codings">
               <h3>card-ui</h3>
               <div class="slide">
@@ -555,8 +557,8 @@
       <!-- Section-project -->
       <section class="project" id="project">
         <div class="project-inner">
-          <h1 class="headline-share">PROJECT</h1>
-          <div class="project-contents">
+          <h1 class="headline-share wow fadeInUp" data-wow-offset="30">PROJECT</h1>
+          <div class="project-contents  wow fadeInUp" data-wow-offset="30">
             <div class="project-content">
               <h3>react</h3>
               <img src="images/project-images/project-1-main.gif" />
@@ -621,10 +623,10 @@
         </div>
       </section>
       <!-- Section-contact -->
-      <section class="contact" id="contact">
+      <section class="contact" data-wow-offset="30" id="contact">
         <div class="contact-inner">
-          <h1>Contact me <span>Work together</span></h1>
-          <div class="contact-info">
+          <h1 class="wow bounceIn">Contact me <span>Work together</span></h1>
+          <div class="contact-info wow fadeInUp"  data-wow-offset="30" >
             <p><b>email</b>tardiswhoi@naver.com</p>
             <p><b>phone</b>010-5150-5737</p>
             <p><b>kakao</b>
@@ -639,6 +641,6 @@
     </div>
     <div class="scroll-top">
       <a href="#"> <i class="fa-solid fa-arrow-up-long"></i></a>
-    </div>
+    </div>   
   </body>
 </html>
