@@ -1,65 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>clog-card</title>
+    <script
+      src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <table class="member">
-      <caption>
-        Company Member Information
-      </caption>
-      <tr>
-        <th>No.</th>
-        <th>Full name</th>
-        <th>Age</th>
-        <th>Job title</th>
-        <th>Location</th>
-      </tr>
-      <tr>
-        <td>6</td>
-        <td>Vincent Willamsowon</td>
-        <td>31</td>
-        <td>ios Developer</td>
-        <td>Washington</td>
-      </tr>
-      <tr>
-        <td>5</td>
-        <td>Tyler Eyes</td>
-        <td>22</td>
-        <td>UI/UX Designer</td>
-        <td>New York</td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td>Heith Cater</td>
-        <td>20</td>
-        <td>Graphic Disigner</td>
-        <td>San Fransicco</td>
-      </tr>
-      <tr>
-        <td>5</td>
-        <td>James Kim</td>
-        <td>35</td>
-        <td>ios Developer</td>
-        <td>Washington</td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>Cindy Lee</td>
-        <td>25</td>
-        <td>UI/UX Designer</td>
-        <td>New York</td>
-      </tr>
-      <tr>
-        <td>1</td>
-        <td>Sally Jung</td>
-        <td>27</td>
-        <td>Graphic Designer</td>
-        <td>San Fransico</td>
-      </tr>
-    </table>
+    <div class="container">
+      <h1>Classic Clog Todler</h1>
+      <div class="items">
+        <div class="item active">
+          <img src="./1.avif" />
+          <img src="./1-1.avif" />
+          <p>Atmosphere</p>
+        </div>
+        <div class="item">
+          <img src="./2.avif" />
+          <img src="./2-1.avif" />
+          <p>lavender</p>
+        </div>
+        <div class="item">
+          <img src="./3.avif" />
+          <img src="./3-1.avif" />
+          <p>black</p>
+        </div>
+        <div class="item">
+          <img src="./4-1.avif" />
+          <img src="./4.avif" />
+          <p>Taffy Pink</p>
+        </div>
+        <div class="item">
+          <img src="./5.avif" />
+          <img src="./5-1.avif" />
+          <p>neon watermelon</p>
+        </div>
+      </div>
+    </div>
+    <script>
+      $(".item").click(function () {
+        $(this).addClass("active");
+        $(this).siblings().removeClass("active");
+      });
+    </script>
   </body>
 </html>

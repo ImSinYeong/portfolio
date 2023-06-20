@@ -1,117 +1,70 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap");
 @font-face {
-  font-family: "GmarketSansMedium";
-  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff")
-    format("woff");
-  font-weight: normal;
-  font-style: normal;
+  font-family: "TheJamsil5Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/TheJamsil3Regular.woff2")
+    format("woff2");
+  font-weight: 400;
 }
 * {
   box-sizing: border-box;
+  font-family: "TheJamsil5Regular";
 }
-
 body {
-  font-family: "Noto Sans KR", san-sarif;
-  font-weight: 300;
-  line-height: 1.5em;
-  margin: 0;
-  background: #fcfcfc;
-}
-.heading {
-  font-family: "GmarketSansMedium";
-  font-size: 66px;
-  text-align: center;
-  font-weight: normal;
-  line-height: 1.5em;
-}
-.heading span {
-  color: deeppink;
-}
-.items-inner {
-  width: 1350px;
-  margin: auto;
-}
-.items-inner h2 {
-}
-.items {
   display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  counter-reset: item;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background-image: linear-gradient(#f5f7fa 0%, #c3cfe2 100%);
+  color: #333;
 }
-.item {
-  flex: 1;
-  position: relative;
+.flight {
+  border-collapse: collapse;
+  box-shadow: 3px 3px 6px 6px rgba(0, 0, 0, 0.02);
+  border-radius: 0 0 30px 30px;
 }
-.item:before {
-  counter-increment: item;
-  content: counter(item);
-  position: absolute;
-  width: 45px;
-  height: 45px;
-  background-color: gray;
-  z-index: 10;
-  border-radius: 0 0 5px 0;
+.flight caption {
+  font-size: 29px;
+  padding: 23px 0;
+  border-radius: 30px 30px 0 0;
+  margin-bottom: 3px;
+  background-color: #6d96d9;
   color: #fff;
+}
+.flight caption i {
+  margin-right: 15px;
+}
+.flight tr {
+}
+.flight th {
+  padding: 16px 6px;
+  background: #6d96d950;
+}
+.flight td {
+  padding: 12px 30px;
+  border-bottom: 1px solid #fff;
+  background: #ffffff70;
+}
+.flight tr:last-child td {
+  border-bottom: 0;
+}
+.flight td:last-child {
+  color: rgb(226, 47, 47);
+  font-weight: 600;
   font-size: 18px;
-  font-weight: 500;
-  text-align: center;
-  line-height: 45px;
 }
-.item:hover:before {
-  background-color: crimson;
+.flight tr:last-child td:first-child {
+  border-radius: 0 0 0 30px;
 }
-.photo {
-  position: relative;
-  height: 270px;
+.flight tr:last-child td:last-child {
+  border-radius: 0 0 30px 0;
 }
-.photo a {
-}
-.photo a img {
-  width: 100%;
-  position: absolute;
-  transition: 0.5s;
-}
-.photo a img:first-child {
-}
-.photo a img:last-child {
-}
-.photo:hover a img:last-child {
-  opacity: 0;
-}
-.detail {
-  position: relative;
-}
-.detail span {
-  display: block;
-}
-.detail .price {
-}
-.detail .price b {
-  color: crimson;
-  margin-right: 10px;
-}
-.detail .name {
-  font-weight: 400;
-}
-.detail .count {
-  color: #777;
-}
-.detail .like {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  right: 5px;
-  top: 4px;
-}
-.detail .like::before {
-  content: "\f08a";
+.flight th:after {
+  content: "\f078";
   font-family: "fontawesome";
-  font-weight: regular;
-  font-size: 18px;
-  color: #999;
+  margin-left: 5px;
 }
-.detail .like.active:before {
-  content: "\f004";
-  color: crimson;
+.flight td {
+  text-align: center;
+}
+.flight td b {
+  display: block;
 }

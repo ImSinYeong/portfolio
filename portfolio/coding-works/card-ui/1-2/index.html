@@ -1,14 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <script
-      src="https://code.jquery.com/jquery-2.2.4.min.js"
-      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-      crossorigin="anonymous"
-    ></script>
+    <title>airplane-card</title>
+    <!-- fontawesome -->
     <script
       src="https://kit.fontawesome.com/1e4c7e5b61.js"
       crossorigin="anonymous"
@@ -16,105 +12,65 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <section>
-      <h1 class="heading">
-        가지고 싶은 스마트 아이템 <b>모두 </b>집합<span> 스마트샵</span>
-      </h1>
-      <div class="items-inner">
-        <h2>이번주 트렌드 상품</h2>
-        <div class="items">
-          <div class="item">
-            <div class="photo">
-              <a href="#none">
-                <img src="./1-1.jpeg" />
-                <img src="./1.jpeg" />
-              </a>
-            </div>
-            <div class="detail">
-              <span class="price"
-                ><b>18<small>%</small></b
-                >23,000원</span
-              >
-              <span class="name">블루투스 헤드셋</span>
-              <span class="count">구매 30</span>
-              <span class="like"></span>
-            </div>
-          </div>
-          <div class="item">
-            <div class="photo">
-              <a href="#none">
-                <img src="./2-1.jpeg" />
-                <img src="./2.jpeg" />
-              </a>
-            </div>
-            <div class="detail">
-              <span class="price"
-                ><b>18<small>%</small></b
-                >23,000원</span
-              >
-              <span class="name">블루투스 헤드셋</span>
-              <span class="count">구매 30</span>
-              <span class="like"></span>
-            </div>
-          </div>
-          <div class="item">
-            <div class="photo">
-              <a href="#none">
-                <img src="./3-1.jpeg" />
-                <img src="./3.jpeg" />
-              </a>
-            </div>
-            <div class="detail">
-              <span class="price"
-                ><b>18<small>%</small></b
-                >23,000원</span
-              >
-              <span class="name">블루투스 헤드셋</span>
-              <span class="count">구매 30</span>
-              <span class="like"></span>
-            </div>
-          </div>
-          <div class="item">
-            <div class="photo">
-              <a href="#none">
-                <img src="./4-1.jpeg" />
-                <img src="./4.jpeg" />
-              </a>
-            </div>
-            <div class="detail">
-              <span class="price"
-                ><b>18<small>%</small></b
-                >23,000원</span
-              >
-              <span class="name">블루투스 헤드셋</span>
-              <span class="count">구매 30</span>
-              <span class="like"></span>
-            </div>
-          </div>
-          <div class="item">
-            <div class="photo">
-              <a href="#none">
-                <img src="./5-1.jpeg" />
-                <img src="./5.jpeg" />
-              </a>
-            </div>
-            <div class="detail">
-              <span class="price"
-                ><b>18<small>%</small></b
-                >23,000원</span
-              >
-              <span class="name">블루투스 헤드셋</span>
-              <span class="count">구매 30</span>
-              <span class="like"></span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <script>
-      $(".like").click(function () {
-        $(this).toggleClass("active");
-      });
-    </script>
+    <table class="flight">
+      <caption>
+        <i class="fa-solid fa-plane-departure"></i
+        >가는편 서울(SEL) → 런던(히드로)(LHR)
+      </caption>
+      <tr>
+        <th>항공사</th>
+        <th>출발시간</th>
+        <th>도착시간</th>
+        <th>경유</th>
+        <th>소요시간</th>
+        <th>요금조건</th>
+        <th>예상요금(성인1인)</th>
+      </tr>
+      <tr>
+        <td>대한항공</td>
+        <td>ICN<b>10:55</b></td>
+        <td>LHR<b>18:50 </b></td>
+        <td>직항</td>
+        <td>14시간 30분</td>
+        <td>성인(삼성ID PET카드 결제 조건) 외 <b>8건</b></td>
+        <td>2,469,200원~</td>
+      </tr>
+      <tr>
+        <td>아시아나항공</td>
+        <td>ICN<b>12:15</b></td>
+        <td>LHR<b>18:50 </b></td>
+        <td>직항</td>
+        <td>14시간 35분</td>
+        <td>성인(삼성ID PET카드 결제 조건) 외 <b>10건</b></td>
+        <td>1,986,000원~</td>
+      </tr>
+      <tr>
+        <td>아시아나항공</td>
+        <td>ICN<b>12:15</b></td>
+        <td>LHR<b>18:50 </b></td>
+        <td>직항</td>
+        <td>14시간 30분</td>
+        <td>성인(현대 NOL 카드 결제조건) 외 <b>8건</b></td>
+        <td>2,469,200원~</td>
+      </tr>
+      <tr>
+        <td>카타르항공</td>
+        <td>ICN<b>01:30</b></td>
+        <td>LHR<b>13:15</b></td>
+        <td>1회 경유</td>
+        <td>19시간 45분</td>
+        <td>성인(NH채움카드결제조건) 외 <b>8건</b></td>
+        <td>2,389,000원~</td>
+      </tr>
+      <tr>
+        <td>에미레이트항공</td>
+        <td>ICN<b>23:55</b></td>
+        <td>LHR<b>16:10 </b></td>
+        <td>1회 경유</td>
+        <td>24시간 15분</td>
+        <td>성인(NH채움카드결제조건) 외 <b>9건</b></td>
+        <td>1,347,400원~</td>
+      </tr>
+    </table>
   </body>
 </html>

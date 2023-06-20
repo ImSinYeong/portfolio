@@ -1,25 +1,74 @@
-body {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@font-face {
+  font-family: "KimjungchulGothic-Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302_01@1.0/KimjungchulGothic-Bold.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+* {
   margin: 0;
-  background-color: #222;
+  font-size: 15px;
+  font-family: "KimjungchulGothic-Bold";
+  box-sizing: border-box;
 }
-.frame {
+body {
+  min-width: 520px;
+  background-color: #fff;
 }
-.frame i {
-  font-size: 10em;
-  color: #fff;
-  text-shadow: 0 0 30px crimson, 0 0 60px crimson, 0 0 90px crimson,
-    0 0 120px crimson;
-  animation: hue-rotate 3s linear infinite;
+a {
+  text-decoration: none;
+  color: #666;
+  font-weight: 900;
 }
-@keyframes hue-rotate {
-  0% {
-    filter: hue-rotate(0);
+header {
+  width: 100%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  padding: 5px 0;
+}
+a:hover {
+  color: #222;
+}
+nav {
+  margin: auto;
+  width: 1280px;
+  display: flex;
+  justify-content: space-between;
+}
+.gnb {
+  display: flex;
+  align-items: center;
+}
+.gnb a {
+  margin-right: 15px;
+}
+.logo {
+  height: 40px;
+  margin-right: 60px;
+}
+img {
+  height: 100%;
+}
+.snb {
+  display: flex;
+  align-items: center;
+}
+i {
+  font-size: 20px;
+  margin-left: 15px;
+}
+.snb > a i {
+  font-size: 30px;
+  margin-left: 20px;
+  color: #c85f5f;
+}
+@media (max-width: 1299px) {
+  nav {
+    width: 100%;
+    padding: 0 10px;
   }
-  100% {
-    filter: hue-rotate(360deg);
+}
+@media (max-width: 620px) {
+  .menu {
+    display: none;
   }
 }

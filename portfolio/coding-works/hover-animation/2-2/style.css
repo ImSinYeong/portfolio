@@ -1,25 +1,81 @@
+@font-face {
+  font-family: "KIMM_Bold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/KIMM_Bold.woff2")
+    format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
 body {
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin: 0;
-  background-color: #222;
+  height: 100vh;
+  font-family: "KIMM_Bold";
+  font-size: 20px;
 }
-.frame {
+p {
+  cursor: pointer;
 }
-.frame i {
-  font-size: 10em;
-  color: #fff;
-  text-shadow: 0 0 30px crimson, 0 0 60px crimson, 0 0 90px crimson,
-    0 0 120px crimson;
-  animation: hue-rotate 3s linear infinite;
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: inherit;
+  gap: 30px;
 }
-@keyframes hue-rotate {
+.item {
+  position: relative;
+}
+.emoji {
+  font-size: 100px;
+  margin: 0;
+}
+.text {
+  width: 150px;
+  padding: 10px 20px;
+  background-color: #ccc;
+  border-radius: 10px;
+  position: absolute;
+  left: 50%;
+  top: -76px;
+  transform: translateX(-50%);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+.text.active {
+  opacity: 1;
+  visibility: visible;
+}
+.text:before {
+  content: "";
+  position: absolute;
+  background-color: #ccc;
+  left: 50%;
+  top: 31px;
+  z-index: -1;
+  width: 20px;
+  height: 20px;
+  transform: translateX(-50%) rotate(45deg);
+}
+.text span {
+  display: inline-block;
+  animation: ud 1s infinite;
+  padding-left: 1px;
+  top: 50%;
+}
+.text span:nth-child(2) {
+  animation-delay: 0.3s;
+}
+.text span:nth-child(3) {
+  animation-delay: 0.6s;
+}
+@keyframes ud {
   0% {
-    filter: hue-rotate(0);
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3px);
   }
   100% {
-    filter: hue-rotate(360deg);
+    transform: translateY(0);
   }
 }

@@ -3,16 +3,46 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"
-    />
+    <title>speech bubble</title>
+    <script
+      src="https://kit.fontawesome.com/1e4c7e5b61.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="frame">
-      <i class="xi-firefox"></i>
+    <div class="container">
+      <div class="item">
+        <p class="emoji">👩‍💻</p>
+        <p class="text">
+          지금은 공부중<span>.</span><span>.</span><span>.</span>
+        </p>
+      </div>
+      <div class="item">
+        <p class="emoji">🤸</p>
+        <p class="text">
+          지금은 운동중<span>.</span><span>.</span><span>.</span>
+        </p>
+      </div>
+      <div class="item">
+        <p class="emoji">🌅</p>
+        <p class="text">
+          지금은 여행중<span>.</span><span>.</span><span>.</span>
+        </p>
+      </div>
     </div>
+    <script>
+      $(".item").hover(function () {
+        $(this).find(".text").addClass("active");
+      });
+      $(".item").mouseleave(function () {
+        $(this).find(".text").removeClass("active");
+      });
+    </script>
   </body>
 </html>

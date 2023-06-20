@@ -1,56 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>jewelry-card</title>
+    <!-- fontawesome -->
     <script
       src="https://kit.fontawesome.com/1e4c7e5b61.js"
       crossorigin="anonymous"
     ></script>
+    <!-- jquery -->
+    <script
+      src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous"
+    ></script>
+    <!-- style -->
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="content">
-      <h1>Ultra-Fast&Secure Cloud Web Hosting</h1>
+    <div class="container">
+      <h1>이번주 TOP5</h1>
       <div class="items">
         <div class="item">
-          <i class="fa-solid fa-paper-plane"></i>
-          <h3>Basic</h3>
-          <h2><sup>$</sup>25</h2>
-          <ul>
-            <li><i class="fa-solid fa-check"></i> 10 GB Space</li>
-            <li><i class="fa-solid fa-check"></i> 3 Domain Names</li>
-            <li><i class="fa-solid fa-check"></i> 20 Email Address</li>
-            <li><i class="fa-solid fa-xmark"></i> Live Support</li>
-          </ul>
-          <a class="btn-order" href="#none">Order Now</a>
+          <div class="photo">
+            <a href="#none">
+              <img src="./1-1.jpeg" /> <img class="img1" src="./1.jpeg"
+            /></a>
+          </div>
+          <div class="detail">
+            <span class="brand">스틸 인스턴트</span>
+            <span class="name">Heart Greenery - Earring 02</span>
+            <span class="price"><b>10</b>% 70,200<small>원</small></span>
+            <div class="like"></div>
+          </div>
         </div>
         <div class="item">
-          <i class="fa-solid fa-plane"></i>
-          <h3>Standard</h3>
-          <h2><sup>$</sup>50</h2>
-          <ul>
-            <li><i class="fa-solid fa-check"></i> 10 GB Space</li>
-            <li><i class="fa-solid fa-check"></i> 3 Domain Names</li>
-            <li><i class="fa-solid fa-check"></i> 20 Email Address</li>
-            <li><i class="fa-solid fa-xmark"></i> Live Support</li>
-          </ul>
-          <a class="btn-order" href="#none">Order Now</a>
+          <div class="photo">
+            <a href="#none"> <img src="./2-1.jpeg" /> <img src="./2.jpeg" /></a>
+          </div>
+          <div class="detail">
+            <span class="brand">바라두</span>
+            <span class="name">14k 다이아 조각 엥게이지 반지</span>
+            <span class="price"><b>5</b>% 199,500<small>원</small></span>
+            <div class="like"></div>
+          </div>
         </div>
         <div class="item">
-          <i class="fa-solid fa-rocket"></i>
-          <h3>Premium</h3>
-          <h2><sup>$</sup>100</h2>
-          <ul>
-            <li><i class="fa-solid fa-check"></i> 10 GB Space</li>
-            <li><i class="fa-solid fa-check"></i> 3 Domain Names</li>
-            <li><i class="fa-solid fa-check"></i> 20 Email Address</li>
-            <li><i class="fa-solid fa-check"></i> Live Support</li>
-          </ul>
-          <a class="btn-order" href="#none">Order Now</a>
+          <div class="photo">
+            <a href="#none"> <img src="./3-1.jpeg" /> <img src="./3.jpeg" /></a>
+          </div>
+          <div class="detail">
+            <span class="brand">마즈</span>
+            <span class="name">실버 더블 태그 투웨이 목걸이</span>
+            <span class="price"> 121,000<small>원</small></span>
+            <div class="like"></div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="photo">
+            <a href="#none"> <img src="./4-1.jpeg" /> <img src="./4.jpeg" /></a>
+          </div>
+          <div class="detail">
+            <span class="brand">시네스테틱 피시스</span>
+            <span class="name">[아몬즈 단독] Double bezel earcuff</span>
+            <span class="price"><b>10</b>% 45,000<small>원</small></span>
+            <div class="like"></div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="photo">
+            <a href="#none"> <img src="./5-1.jpeg" /> <img src="./5.jpeg" /></a>
+          </div>
+          <div class="detail">
+            <span class="brand">마마카사르</span>
+            <span class="name">라이크어플라워 미니 챠밍 실버 목걸이</span>
+            <span class="price"><b>32%</b> 70,720<small>원</small></span>
+            <span class="like"></span>
+          </div>
         </div>
       </div>
+      <button>view more</button>
     </div>
+    <script>
+      $(".like").click(function () {
+        $(this).toggleClass("active");
+      });
+    </script>
   </body>
 </html>

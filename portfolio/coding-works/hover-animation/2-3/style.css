@@ -1,48 +1,118 @@
 body {
-  background: #000;
-  color: #fff;
   height: 100vh;
-  margin: 0;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  background-color: #f1f1f1;
 }
-.btn {
-  text-decoration: none;
-  color: transparent;
-  font-size: 10em;
-  font-weight: 600;
-  -webkit-text-stroke: 1px #fff;
+.container {
+  width: 120px;
+  height: 120px;
+  border-radius: 56px;
+  border: 1px solid #000;
   position: relative;
-  transition: 0.3s;
+  border: 6px solid #fff;
+  background-color: lightblue;
 }
-.btn:before,
-.btn:after {
+.fa-question {
+  font-size: 80px;
   position: absolute;
-  top: 0;
-  left: 0;
-  content: attr(data-text);
-  transition: 0.3s;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  animation: trans0 2s;
   opacity: 0;
 }
-.btn:before {
-  color: royalblue;
-  -webkit-text-stroke: 1px transparent;
+@keyframes trans0 {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    transform: scale(0.9) translate(-50%, -50%);
+  }
+  60% {
+    transform: scale(1) translate(-50%, -50%);
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
-.btn:after {
-  color: crimson;
-  -webkit-text-stroke: 1px transparent;
+.border {
+  width: 111px;
+  height: 72px;
+  border-radius: 55% 45% 70% 30% / 50% 59% 41% 50%;
+  position: absolute;
+  left: 50%;
+  top: 27%;
+  transform: translateX(-50%);
+  background-color: lightslategray;
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.1);
+  animation: trans1 3s;
 }
-.btn:hover {
-  color: #fff;
+.left-eye {
+  position: absolute;
+  left: 39px;
+  top: 16px;
+  width: 5px;
+  height: 5px;
+  border-radius: 46% 54% 42% 58% / 59% 35% 65% 41%;
+  background: #444;
 }
-.btn:hover:before {
-  left: 10px;
-  top: -10px;
-  opacity: 1;
+.right-eye {
+  position: absolute;
+  left: 47px;
+  top: 14px;
+  width: 7px;
+  height: 7px;
+  border-radius: 57% 43% 61% 39% / 59% 59% 41% 41%;
+  background: #444;
 }
-.btn:hover:after {
-  left: 20px;
-  top: -20px;
-  opacity: 1;
+.mouse {
+  position: absolute;
+  left: 41px;
+  top: 22px;
+  width: 8px;
+  height: 1.5px;
+  background-color: #444;
+}
+@keyframes trans1 {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+}
+.fa-heart {
+  color: rgb(225, 112, 112);
+  position: absolute;
+}
+.fa-heart:nth-of-type(2) {
+  left: -2px;
+  top: -16px;
+  transform: rotate(-29deg);
+  font-size: 37px;
+  animation: trans2 2.6s;
+}
+.fa-heart:nth-of-type(3) {
+  left: 101px;
+  top: -25px;
+  transform: rotate(35deg);
+  animation: trans2 2.8s;
+}
+@keyframes trans2 {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

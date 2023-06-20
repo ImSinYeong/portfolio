@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  background-color: #f1f1f1;
+}
+img {
+  padding-top: 7px;
+  height: 50px;
+}
+a {
+  text-decoration: none;
+  color: #222;
+}
+i {
+  font-size: 20px;
+  padding-left: 16px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  position: fixed;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 10px 0;
+  background-color: #fff;
+}
+.menu-logo {
+  display: flex;
+  align-items: center;
+  margin-left: 16px;
+}
+.menu-logo i {
+  margin-right: 15px;
+  padding: 0;
+}
+header > .fa-magnifying-glass {
+  display: none;
+}
+.search {
+  flex: 1;
+}
+.search > i {
+  display: none;
+}
+.search-box {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  position: relative;
+}
+.search-box input {
+  width: 90%;
+  height: 40px;
+  border-radius: 40px 0 0 40px;
+  border: none;
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  padding-left: 20px;
+  font-size: 16px;
+}
+.search-box i {
+  height: 40px;
+  width: 60px;
+  line-height: 40px;
+  border-radius: 0 40px 40px 0;
+  background: #f0f0f0;
+  border: 1px solid #ccc;
+  margin-left: -1px;
+  position: relative;
+}
+.search-box i:after {
+  position: absolute;
+  content: "\f11c";
+  font-family: "fontawesome";
+  top: 0;
+  right: 75px;
+  font-size: 16px;
+}
+.rnb {
+  margin-right: 16px;
+}
+nav {
+  top: 0;
+  left: -250px;
+  position: absolute;
+  width: 240px;
+  height: 100vh;
+  background: #fff;
+  padding: 0 8px;
+  border-right: 1px solid #ccc;
+  transition: 0.3s;
+  z-index: 10;
+}
+nav.active {
+  left: 0;
+}
+nav .menu-logo {
+  margin: 0;
+  padding-top: 14px;
+  padding-left: 8px;
+}
+nav .menu-logo i {
+  padding-bottom: 8px;
+}
+nav .menu-logo img {
+  padding: 4px 0;
+}
+nav > a {
+  display: block;
+  padding: 8px;
+  border-radius: 8px;
+  font-weight: 500;
+}
+nav > a:hover {
+  background-color: #f1f1f1;
+}
+section {
+  position: relative;
+}
+section:before {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: #000;
+}
+@media (max-width: 504px) {
+  header {
+    gap: 0;
+    height: 74px;
+  }
+  .search {
+    display: none;
+  }
+  header > .fa-magnifying-glass {
+    display: block;
+    flex: 1;
+    text-align: right;
+  }
+  header.active .menu-logo,
+  header.active > i,
+  header.active .rnb {
+    display: none;
+  }
+  header.active .search {
+    display: block;
+    display: flex;
+    align-items: center;
+  }
+  header.active .search > i {
+    display: block;
+  }
+}

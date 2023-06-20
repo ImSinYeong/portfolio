@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      src="https://kit.fontawesome.com/1e4c7e5b61.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="menu-logo">
+        <i class="fa-solid fa-bars"></i>
+        <a href="#none"><img src="./logo.jpg" /></a>
+      </div>
+      <div class="search">
+        <i class="fa-solid fa-arrow-left"></i>
+        <div class="search-box">
+          <input type="text" placeholder="검색" />
+          <a href="#none"><i class="fa-solid fa-magnifying-glass"></i></a>
+        </div>
+      </div>
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <div class="rnb">
+        <a href="#none"><i class="fa-solid fa-video"></i></a>
+        <a href="#none"><i class="fa-solid fa-bell"></i></a>
+        <a href="#none"><i class="fa-solid fa-circle-user"></i></a>
+      </div>
+      <nav>
+        <div class="menu-logo">
+          <i class="fa-solid fa-bars"></i>
+          <a href="#none"><img src="./logo.jpg" />
+          </div></a>
+        <a href="#none">홈</a>
+        <a href="#none">Shorts</a>
+        <a href="#none">구독</a>
+        <a href="#none">Originals</a>
+        <a href="#none">YouTube Music</a>
+      </nav>
+    </header>
+    <script>
+      $('.menu-logo>.fa-bars').click(function(){
+        $('nav, section').addClass('active');
+      })
+      $('nav .fa-bars').click(function(){
+        $('nav').removeClass('active');
+      })
+      $('header > .fa-magnifying-glass').click(function(){
+        $('header, .search').addClass('active');
+      })
+      $('.search > i').click(function(){
+        $('header, .search').removeClass('active');
+      })
+    </script>
+  </body>
+</html>
