@@ -138,12 +138,16 @@ h6 {
   border-radius: 5px;
   display: none;
 }
-.header-menu .menu a:first-child:hover:before,
-.header-menu .menu a:first-child:hover:after {
+.header-menu .menu a:first-child.active:before,
+.header-menu .menu a:first-child.active:after {
   display: block;
 }
 .header-menu .menu a:nth-child(2).active .store-news {
   display: block;
+}
+.header-menu .menu a:nth-child(2).active i,
+.header-menu .menu a:nth-child(3).active i {
+  transform: rotate(180deg);
 }
 .store-news {
   position: absolute;
