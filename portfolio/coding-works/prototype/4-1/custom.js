@@ -1,12 +1,11 @@
 
 $(document).ready(function(){
   //store-news
-  $(".header-menu .menu a:nth-child(2)"). click(function () {
+  $(".header-menu .menu a:nth-child(2)").click(function () {
     $(this).toggleClass("active");
-
   });
   //.recent-product
-  $(".header-menu .menu a:nth-child(3)"). click(function () {
+  $(".header-menu .menu a:nth-child(3)").click(function () {
     $(this).toggleClass("active");
   });
   // btn-category

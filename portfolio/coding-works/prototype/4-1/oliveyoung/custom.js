@@ -1,13 +1,20 @@
 
 $(document).ready(function(){
   //store-news
-  $(".header-menu .menu a:nth-child(2)"). click(function () {
-    $(this).toggleClass("active");
-
+  $(".header-menu .menu a:nth-child(2)").mouseenter(function () {
+    $(this).addClass("active");
+    $(this).siblings().removeClass('active');
+  });
+  $(".header-menu").mouseleave(function () {
+    $(".header-menu .menu a:nth-child(2)").removeClass("active");
   });
   //.recent-product
-  $(".header-menu .menu a:nth-child(3)"). click(function () {
-    $(this).toggleClass("active");
+  $(".header-menu .menu a:nth-child(3)").mouseenter(function () {
+    $(this).addClass("active");
+    $(this).siblings().removeClass('active');
+  });
+  $(".header-menu").mouseleave(function () {
+    $(".header-menu .menu a:nth-child(3)").removeClass("active");
   });
   // btn-category
   $(".btn-category-open").click(function () {
