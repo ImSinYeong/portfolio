@@ -278,6 +278,17 @@
     color: #000;
     font-size: 20px;
   }
+  .gnb a:after {
+    width: 0;
+    margin: auto;
+    text-align: center;
+    left: 50%;
+    bottom: 10px;
+    transform: translateX(-50%);
+  }
+  .gnb a:hover:after {
+    width: 30%;
+  }
   .trigger {
     display: block;
     width: 30px;
@@ -291,21 +302,24 @@
     position: absolute;
     display: block;
     border: none;
-    width: 100%;
-    height: 1px;
-    background: #000;
+    height: 2px;
+    background: #222;
     transition: 0.2s;
   }
   .trigger span:nth-child(1) {
+    width: 80%;
     top: 0;
   }
   .trigger span:nth-child(2) {
+    width: 50%;
     top: 50%;
   }
   .trigger span:nth-child(3) {
+    width: 70%;
     top: 100%;
   }
   .trigger.active span:nth-child(1) {
+    width: 100%;
     top: 50%;
     transform: rotate(45deg);
   }
@@ -313,6 +327,7 @@
     display: none;
   }
   .trigger.active span:nth-child(3) {
+    width: 100%;
     top: 50%;
     transform: rotate(-45deg);
   }
@@ -480,6 +495,10 @@
   .tab-btn label {
     padding: 0 15px;
     line-height: 0;
+  }
+  .tab-btn label p:after {
+    bottom: -15px;
+    height: 3px;
   }
   .tab-img {
     float: none;

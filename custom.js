@@ -5,7 +5,7 @@ $(document).ready((function(){
   //nav
   $('.trigger').click(function(){
     $(this).toggleClass('active');
-    $('.gnb').toggleClass('active');
+    $('.gnb, body').toggleClass('active');
   })
   $('.gnb a').click(function(){
     $('.trigger').removeClass('active');

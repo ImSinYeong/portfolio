@@ -49,6 +49,10 @@ body {
   color: #222;
   overflow-x: hidden;
 }
+body.active {
+  overflow: hidden;
+  touch-action: none;
+}
 /* Common CSS */
 .headline-share {
   font-size: 47px;
