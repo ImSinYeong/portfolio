@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/favicon.svg" />
     <title>SMART SOCIAL</title>
-    <link rel="icon" href="./images/logo_white.svg" />
     <!-- jQuery -->
     <script
       src="https://code.jquery.com/jquery-2.2.4.min.js"
@@ -20,13 +20,19 @@
     <link rel="stylesheet" href="./js/slick/slick.css" />
     <link rel="stylesheet" href="./js/slick/slick-theme.css" />
     <script src="./js/slick/slick.min.js"></script>
+    <!-- Wow -->
+    <link rel="stylesheet" href="./wow/animate.css" />
+    <script src="./wow/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
     <!-- Custom -->
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="responsive.css" />
     <script src="custom.js"></script>
   </head>
   <body>
-    <header>
+    <header class="wow fadeInUp">
       <div class="header-bg"></div>
       <div class="logo">
         <img src="./images/logo.svg" alt="스마트소셜로고" />
@@ -154,7 +160,7 @@
           <img src="./images/visual03.jpg" alt="배경3" />
         </div>
       </div>
-      <div class="main-desc">
+      <div class="main-desc wow fadeIn" data-wow-delay="0.5s">
         <h2>채용시장의 새로운 패러다임, <br />JOB & CAREER 매니지먼트 그룹</h2>
         <h1>SMART SOCIAL</h1>
         <p>
@@ -164,10 +170,11 @@
           회사입니다.
         </p>
       </div>
+      <img class="scroll" src="./images/ico_scroll.png" alt="스크롤" />
     </section>
     <section class="about-us">
       <div class="about-philosophy">
-        <div class="about-desc">
+        <div class="about-desc wow fadeInUp" data-offset="100">
           <p>스마트소셜 솔루션 이야기</p>
           <h3>OUR PHILOSOPHY</h3>
           <p>
@@ -181,7 +188,7 @@
         </div>
       </div>
       <div class="about-technology">
-        <div class="about-desc">
+        <div class="about-desc wow fadeInUp" data-offset="100">
           <p>스마트소셜 취업ㆍ진로 솔루션</p>
           <h3>OUR TECHNOLOGY</h3>
           <ul>
@@ -218,7 +225,7 @@
       </div>
     </section>
     <section class="business">
-      <div class="headline">
+      <div class="headline wow fadeInUp" data-offset="100">
         <h3>BUSINESS</h3>
         <h4>
           스마트소셜은 첨단 IT기술을 활용해 다양한 진로ㆍ취업 지원 솔루션을
@@ -226,7 +233,11 @@
         </h4>
       </div>
       <div class="business-lists">
-        <div class="business-list">
+        <div
+          class="business-list wow fadeInUp"
+          data-offset="100"
+          data-wow-delay="0.25s"
+        >
           <img src="./images/main_business01.jpg" alt="솔루션" />
           <div class="business-desc">
             <h4>콘텐츠사업</h4>
@@ -234,7 +245,11 @@
             <span class="more"><a href="#none">콘텐츠사업 바로가기</a></span>
           </div>
         </div>
-        <div class="business-list">
+        <div
+          class="business-list wow fadeInUp"
+          data-offset="100"
+          data-wow-delay="0.5s"
+        >
           <img src="./images/main_business02.jpg" alt="솔루션" />
           <div class="business-desc">
             <h4>공공위탁사업</h4>
@@ -242,7 +257,11 @@
             <span class="more"><a href="#none">공공위탁사업 바로가기</a></span>
           </div>
         </div>
-        <div class="business-list">
+        <div
+          class="business-list wow fadeInUp"
+          data-offset="100"
+          data-wow-delay="0.75s"
+        >
           <img src="./images/main_business03.jpg" alt="솔루션" />
           <div class="business-desc">
             <h4>솔루션</h4>
@@ -253,7 +272,11 @@
             <span class="more"><a href="#none">솔루션 바로가기</a></span>
           </div>
         </div>
-        <div class="business-list">
+        <div
+          class="business-list wow fadeInUp"
+          data-offset="100"
+          data-wow-delay="1s"
+        >
           <img src="./images/main_business04.jpg" alt="솔루션" />
           <div class="business-desc">
             <h4>교육사업</h4>
@@ -267,11 +290,11 @@
       </div>
     </section>
     <section class="news">
-      <div class="headline">
+      <div class="headline wow fadeInUp" data-offset="100">
         <h3>SOCIAL NEWS</h3>
         <h4>스마트소셜의 다양한 활동 소식을 확인해보세요.</h4>
       </div>
-      <div class="news-cards">
+      <div class="news-cards wow fadeInUp" data-offset="100">
         <div class="news-card">
           <a href="#none">
             <div class="news-img"></div>

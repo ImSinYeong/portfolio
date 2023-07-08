@@ -1,6 +1,6 @@
 $(document).ready(function () {
   //wow
-  // new WOW().init();
+  new WOW().init();
 
   //nav
   $(".trigger").click(function () {

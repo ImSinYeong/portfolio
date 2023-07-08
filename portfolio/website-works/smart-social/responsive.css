@@ -203,9 +203,27 @@
   }
 }
 @media (max-width: 768px) {
-  /* main 화살표 */
+  /* Header */
   .mobile-gnb {
     width: 415px;
+  }
+  /* ##### main ##### */
+  .main-desc h2 {
+    font-size: 22px;
+  }
+  .main-desc h2 br {
+    display: block;
+  }
+  .main-desc h1 {
+    font-size: 55px;
+  }
+  .scroll {
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 60px;
+    transform: translateX(-50%);
+    z-index: 20;
   }
   /* ##### business, news ##### */
   .headline {
@@ -314,6 +332,10 @@
   }
   .main-desc p {
     font-size: 16px;
+  }
+  .scroll {
+    width: 50px;
+    height: 50px;
   }
   /* ##### about-us ##### */
   .about-desc ul {
