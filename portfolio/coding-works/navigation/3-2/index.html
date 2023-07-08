@@ -17,72 +17,48 @@
   </head>
   <body>
     <header>
+      <div class="menu-logo">
+        <i class="fa-solid fa-bars"></i>
+        <a href="#none"><img src="./logo.jpg" /></a>
+      </div>
+      <div class="search">
+        <i class="fa-solid fa-arrow-left"></i>
+        <div class="search-box">
+          <input type="text" placeholder="검색" />
+          <a href="#none"><i class="fa-solid fa-magnifying-glass"></i></a>
+        </div>
+      </div>
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <div class="rnb">
+        <a href="#none"><i class="fa-solid fa-video"></i></a>
+        <a href="#none"><i class="fa-solid fa-bell"></i></a>
+        <a href="#none"><i class="fa-solid fa-circle-user"></i></a>
+      </div>
       <nav>
-        <div class="left-nav">
+        <div class="menu-logo">
           <i class="fa-solid fa-bars"></i>
-          <div class="logo"><img src="./logo.svg" /></div>
-          <div class="mobile-menu">
-            <a href="#none">홈</a>
-            <a href="#none">툴</a>
-            <a href="#none">에디터</a>
-            <a href="#none">플러그인</a>
-            <a href="#none">스토어 <i class="fa-solid fa-chevron-right"></i></a>
-            <a href="#none">공유 트렌드</a>
-            <a href="#none"
-              >튀튼 가이드 <i class="fa-solid fa-chevron-right"></i
-            ></a>
-            <a href="#none"
-              >다운로드 <i class="fa-solid fa-chevron-right"></i
-            ></a>
-            <a href="#none">로그인</a>
-          </div>
-          <div class="gnb">
-            <ul>
-              <li>
-                <a href="#none">채팅</a>
-              </li>
-              <li>
-                <a href="#none">툴</a>
-              </li>
-              <li>
-                <a href="#none">에디터</a>
-              </li>
-              <li>
-                <a href="#none">플러그인</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="right-nav">
-          <ul>
-            <li><a href="#none">AI 스토어</a></li>
-            <li><a href="#none">공유 트렌드</a></li>
-            <li class="sub">
-              <a href="#none" class="download"
-                >다운로드 <i class="fa-solid fa-chevron-down"></i
-              ></a>
-              <ul class="sub-menu">
-                <li><a href="#none">Android 7 iOS</a></li>
-                <li><a href="#none">Window & Mac</a></li>
-                <li><a href="#none">카카오톡</a></li>
-              </ul>
-            </li>
-          </ul>
-          <a href="#none">로그인</a>
-        </div>
+          <a href="#none"><img src="./logo.jpg" />
+          </div></a>
+        <a href="#none">홈</a>
+        <a href="#none">Shorts</a>
+        <a href="#none">구독</a>
+        <a href="#none">Originals</a>
+        <a href="#none">YouTube Music</a>
       </nav>
     </header>
-    <section></section>
     <script>
-      $(".sub").click(function () {
-        $(".sub-menu, .download").toggleClass("active");
-      });
-      $(".fa-bars").click(function () {
-        $("nav, .mobile-menu, .left-nav, .fa-bars").addClass("active");
-      });
-      $("section").click(function () {
-        $("nav, .mobile-menu, .left-nav, .fa-bars").removeClass("active");
-      });
+      $('.menu-logo>.fa-bars').click(function(){
+        $('nav, section').addClass('active');
+      })
+      $('nav .fa-bars').click(function(){
+        $('nav').removeClass('active');
+      })
+      $('header > .fa-magnifying-glass').click(function(){
+        $('header, .search').addClass('active');
+      })
+      $('.search > i').click(function(){
+        $('header, .search').removeClass('active');
+      })
     </script>
   </body>
 </html>

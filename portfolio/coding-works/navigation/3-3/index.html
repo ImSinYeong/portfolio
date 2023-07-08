@@ -8,27 +8,81 @@
       src="https://kit.fontawesome.com/1e4c7e5b61.js"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
       <nav>
-        <div class="gnb">
-          <a href="#none" class="logo"><img src="./logo.png" /></a>
-          <a href="#none">스타트업 채용</a>
-          <a href="#none">디렉토리</a>
-          <a href="#none">커리어 프로필</a>
-          <a href="#none">제안 받기</a>
-        </div>
-        <div class="snb">
-          <div class="menu">
-            <a href="#none"><i class="fa-solid fa-magnifying-glass"></i></a>
-            <a href="#none"><i class="fa-solid fa-bell"></i></a>
-            <a href="#none"><i class="fa-solid fa-heart"></i></a>
+        <div class="left-nav">
+          <i class="fa-solid fa-bars"></i>
+          <div class="logo"><img src="./logo.svg" /></div>
+          <div class="mobile-menu">
+            <a href="#none">홈</a>
+            <a href="#none">툴</a>
+            <a href="#none">에디터</a>
+            <a href="#none">플러그인</a>
+            <a href="#none">스토어 <i class="fa-solid fa-chevron-right"></i></a>
+            <a href="#none">공유 트렌드</a>
+            <a href="#none"
+              >튀튼 가이드 <i class="fa-solid fa-chevron-right"></i
+            ></a>
+            <a href="#none"
+              >다운로드 <i class="fa-solid fa-chevron-right"></i
+            ></a>
+            <a href="#none">로그인</a>
           </div>
-          <a href="#none"><i class="fa-solid fa-circle-user"></i></a>
+          <div class="gnb">
+            <ul>
+              <li>
+                <a href="#none">채팅</a>
+              </li>
+              <li>
+                <a href="#none">툴</a>
+              </li>
+              <li>
+                <a href="#none">에디터</a>
+              </li>
+              <li>
+                <a href="#none">플러그인</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="right-nav">
+          <ul>
+            <li><a href="#none">AI 스토어</a></li>
+            <li><a href="#none">공유 트렌드</a></li>
+            <li class="sub">
+              <a href="#none" class="download"
+                >다운로드 <i class="fa-solid fa-chevron-down"></i
+              ></a>
+              <ul class="sub-menu">
+                <li><a href="#none">Android 7 iOS</a></li>
+                <li><a href="#none">Window & Mac</a></li>
+                <li><a href="#none">카카오톡</a></li>
+              </ul>
+            </li>
+          </ul>
+          <a href="#none">로그인</a>
         </div>
       </nav>
     </header>
+    <section></section>
+    <script>
+      $(".sub").click(function () {
+        $(".sub-menu, .download").toggleClass("active");
+      });
+      $(".fa-bars").click(function () {
+        $("nav, .mobile-menu, .left-nav, .fa-bars").addClass("active");
+      });
+      $("section").click(function () {
+        $("nav, .mobile-menu, .left-nav, .fa-bars").removeClass("active");
+      });
+    </script>
   </body>
 </html>

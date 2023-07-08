@@ -1,548 +1,59 @@
-@font-face {
-  font-family: "Jamsil1Thin";
-  src: url(./font/The\ Jamsil\ 1\ Thin.ttf);
-}
-@font-face {
-  font-family: "Jamsil2Light";
-  src: url(./font/The\ Jamsil\ 2\ Light.ttf);
-}
-@font-face {
-  font-family: "Jamsil3Regular";
-  src: url(./font/The\ Jamsil\ 3\ Regular.ttf);
-}
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&display=swap");
 * {
-  box-sizing: border-box;
-  font-family: "Jamsil3Regular";
+  font-family: "Playfair Display", serif;
 }
 body {
   margin: 0;
-  color: #000;
-  line-height: 1.3em;
-}
-.inner {
-  width: 1020px;
-  margin: auto;
+  padding: 0;
+  background: #121212;
+  height: 100vh;
+  overflow: hidden;
 }
 a {
+  color: #fff;
   text-decoration: none;
-  color: #000;
 }
-ul {
-  list-style: none;
-  padding: 0;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
-}
-/* ########## Header ########## */
-.header-inner {
-}
-.service {
-  display: flex;
-  justify-content: flex-end;
-}
-.service a {
-  display: block;
-  font-size: 12px;
-  padding: 7px;
-  position: relative;
-  color: #333;
-  cursor: pointer;
-}
-.service a:after {
-  content: "|";
+.cursor {
   position: absolute;
-  right: 0;
-  font-size: 11px;
-}
-.service a:last-child {
-  padding-right: 0;
-}
-.service a:last-child:after {
-  content: none;
-}
-.header-menu {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 15px 0;
-}
-.header-menu .logo {
-  width: 248px;
-}
-.header-menu .logo img {
-  width: 100%;
-}
-.header-menu .input {
-  position: relative;
-}
-.header-menu .input input {
-  width: 340px;
-  border: 2px solid #9bce26;
-  border-radius: 30px;
-  padding: 10px;
-}
-.header-menu .input input::placeholder {
-  font-size: 11px;
-  color: #999;
-}
-.header-menu .input img {
-  position: absolute;
+  width: 400px;
+  height: 500px;
   top: 50%;
-  transform: translateY(-50%);
-  right: 15px;
-}
-.header-menu .menu {
-  display: flex;
-  align-items: center;
-  position: relative;
-}
-.header-menu .menu a {
-  font-size: 14px;
-  padding: 0 10px;
-  margin: 7px 0;
-  border-right: 1px solid #ddd;
-}
-.header-menu .menu a:first-child {
-  position: relative;
-}
-.header-menu .menu a:first-child:before {
-  position: absolute;
-  content: "";
-  top: 37px;
-  left: 67px;
-  width: 10px;
-  height: 10px;
-  z-index: 11;
-  background: #fff;
-  transform: rotate(45deg);
-  display: none;
-}
-.header-menu .menu a:first-child:after {
-  position: absolute;
-  content: "배송지를 등록하고 오늘드림으로 구매 가능한 상품을 확인하세요!";
-  font-size: 13px;
-  top: 42px;
-  left: 9px;
-  width: 200px;
-  height: auto;
-  background-color: #fff;
-  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.1);
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: url(./baradu.jpeg) no-repeat;
+  background-size: cover;
   z-index: 10;
-  padding: 9px 20px 9px 16px;
-  border-radius: 5px;
-  display: none;
+  transform: scale(0.1);
+  opacity: 0;
 }
-.header-menu .menu a:first-child.active:before,
-.header-menu .menu a:first-child.active:after {
-  display: block;
+.wrapper {
+  width: 80%;
+  margin: 180px auto;
+  height: 100%;
 }
-.header-menu .menu a:nth-child(2).active .store-news {
-  display: block;
-}
-.header-menu .menu a:nth-child(2).active i,
-.header-menu .menu a:nth-child(3).active i {
-  transform: rotate(180deg);
-}
-.store-news {
-  position: absolute;
-  background: #fff;
-  right: 94px;
-  top: 48px;
-  width: 615px;
-  height: 180px;
-  border: 1px solid #ccc;
-  z-index: 11;
-  text-align: center;
-  padding: 20px;
-  display: none;
-}
-.store-news p {
-  font-size: 17px;
-  color: #777;
-  margin-top: 20px;
-}
-.store-news p span {
-  color: #9bce26;
-}
-.store-news hr {
-  color: none;
-  width: 100%;
-  height: 1px;
-  border: none;
-  background-color: #ccc;
-  margin-top: 20px;
-  display: inline-block;
-}
-.store-news button {
-  background: #fff;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  padding: 5px 15px;
-  cursor: pointer;
-  color: #777;
-}
-.store-news button:hover {
-  border-color: #000;
-  color: #000;
-}
-.store-news:after {
-  position: absolute;
-  content: "";
-  width: 10px;
-  height: 10px;
-  transform: rotate(45deg);
-  border: 1px solid #ccc;
-  background-color: #fff;
-  border-right: none;
-  border-bottom: none;
-  right: 50px;
-  top: -6px;
-  z-index: 13;
-}
-.recent-product {
-  position: absolute;
-  right: 0px;
-  top: 48px;
-  width: 1020px;
-  height: 513px;
-  background: #fff;
-  z-index: 12;
-  border: 1px solid #ccc;
-  display: none;
-  padding: 20px;
-}
-.header-menu .menu a:nth-child(3).active .recent-product {
-  display: block;
-}
-.recent-product:after {
-  position: absolute;
-  content: "";
-  width: 10px;
-  height: 10px;
-  transform: rotate(45deg);
-  border: 1px solid #ccc;
-  background-color: #fff;
-  border-right: none;
-  border-bottom: none;
-  right: 50px;
-  top: -6px;
-  z-index: 13;
-}
-.recent-product h6 {
-  font-size: 14px;
-  color: #444;
-}
-.recent-product h6 span {
-  color: #9bce26;
-}
-.recent-product hr {
-  color: none;
-  width: 100%;
-  height: 1px;
-  border: none;
-  background-color: #ccc;
-  margin-top: 15px;
-  display: inline-block;
-}
-.recent-product p {
-  text-align: center;
-  color: #777;
-  padding-top: 200px;
-}
-.header-menu .menu a:last-child {
-  padding-right: 0;
-  border-right: none;
-}
-.header-menu .menu a img {
-  width: 22px;
-  margin-bottom: -3px;
-}
-.header-menu .menu a i {
-  margin-left: 5px;
-}
-/* ########## Header ########## */
-.gnb {
-  border-top: 1px solid #ccc;
-  border-bottom: 2px solid #666;
-}
-.gnb-inner {
-  display: flex;
-  justify-content: space-between;
+.project {
   position: relative;
-}
-.gnb-inner > a {
-  font-weight: 700;
-  font-size: 16px;
-  padding: 15px 0;
-  margin: 0 15px;
-  display: block;
-  font-family: "Jamsil2Light";
-  position: relative;
-}
-.gnb-inner > a:not(:first-of-type):after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 5px;
-  width: 0;
-  height: 2px;
-  background: #e02020;
-}
-.gnb-inner > a:not(:first-of-type):hover {
-  color: #e02020;
-  opacity: 0.9;
-}
-.gnb-inner > a:not(:first-of-type):hover:after {
-  width: 100%;
-}
-.gnb-inner > a:first-child {
-  flex-basis: 170px;
-  border-left: 1px solid #ccc;
-  border-right: 1px solid #ccc;
-  position: relative;
-  margin-left: 0;
-}
-.gnb-inner > a:first-child i {
-  margin-right: 7px;
-  margin-left: 20px;
-}
-.site-map {
-  border: 3px solid #2f3030;
-  position: absolute;
-  left: 1px;
-  top: 50px;
-  width: 100%;
-  padding: 0 10px;
-  display: flex;
-  display: none;
-  z-index: 30;
-  background: #fff;
-}
-.site-map.active {
-  display: flex;
-}
-.btn-category-open.active {
-  background-color: #2f3030;
   color: #fff;
-}
-.site-map .items {
-  flex: 1;
-  padding: 0 8px;
-  border-right: 1px solid #ccc;
-}
-.site-map .items:nth-child(3) {
-  border-right: none;
-}
-.site-map .items-wrapper {
-  display: flex;
-}
-.site-map .items-wrap {
-  flex: 1;
-}
-.site-map .items:first-child {
-  flex: 2;
-}
-.site-map .items h6 {
-  font-size: 16px;
-  padding: 10px;
-  border-bottom: 1px solid #000;
-  font-family: "Jamsil2Light";
-}
-.site-map .items ul {
-  padding: 0 5px;
-}
-.site-map .items ul > a {
-  font-size: 15px;
-  font-family: "Jamsil3Regular";
-  display: inline-block;
-  margin-bottom: 5px;
-  position: relative;
-}
-.site-map .items ul a,
-.site-map .items ul li a {
-  position: relative;
-}
-.site-map .items ul a:before,
-.site-map .items ul li a:before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -3px;
-  width: 0;
-  height: 2px;
-  background-color: #000;
-  transition: 0.1s;
-}
-.site-map .items ul a:hover:before,
-.site-map .items ul li a:hover:before {
-  width: 100%;
-}
-.site-map .items ul li a:hover {
-  color: #000;
-}
-.site-map .items ul > a i {
-  font-size: 12px;
-}
-.site-map .items ul li {
-}
-.site-map .items ul li a {
-  font-size: 13px;
-  color: #666;
-}
-.btn-category-close {
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
-  width: 40px;
-  height: 40px;
-  text-align: center;
-  padding-top: 6px;
-  background-color: #2f3030;
-  color: #fff;
-}
-.btn-category-close i {
-  font-size: 25px;
-}
-/* lnb */
-.lnb {
-  position: absolute;
-  top: 50px;
-  left: 0;
-  padding-top: 5px;
-  background: rgb(102, 102, 102, 0.8);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 12px;
+  height: 70px;
   z-index: 2;
 }
-.lnb a {
-  display: block;
-  padding: 5px 68px 4px 20px;
-  font-size: 14px;
-  color: #fff;
+.project h2 {
+  font-size: 1.8vw;
+  text-transform: uppercase;
+  font-weight: 700;
 }
-.lnb a:last-child {
-  background: rgb(102, 102, 102);
-}
-.lnb a:hover {
-  background-color: #333;
-}
-.lnb a img {
-  width: 15px;
-  margin-bottom: -2px;
-}
-/* ########## Section: banner ########## */
-.banner .slide-wrapper {
-  position: relative;
-}
-.banner .slide {
-  height: 450px;
-  width: 100%;
-}
-.banner .slide a {
-  position: relative;
-  margin: auto;
-  width: 100%;
-  height: 450px;
-  display: block;
-}
-.banner .slide img {
+.project-overlay {
   position: absolute;
   left: 0;
   top: 0;
   width: 100%;
-  height: 450px;
-  object-fit: cover;
-}
-.slide .text {
-  position: absolute;
-  top: 40px;
-  left: 34%;
-  width: 500px;
-  height: 300px;
-  z-index: 20;
-}
-.banner .text h6 {
-  color: #000;
-  font-size: 18px;
-}
-.slide .text hr {
-  width: 20px;
-  height: 2px;
-  display: inline-block;
-  margin-top: 10px;
-  border: none;
-  background: #666;
-}
-.banner .text h3 {
-  color: #1f1f1f;
-  font-size: 48px;
-  margin: 30px 0;
-  line-height: 1.2em;
-  font-family: "Jamsil1Thin";
-  margin-left: -5px;
-}
-.banner .text span {
-  color: #666;
-  font-size: 18px;
-}
-/* slick suctom */
-.slick-arrow {
-  width: 50px;
-  height: 50px;
-  z-index: 10;
-}
-.slick-prev {
-  position: absolute;
-  left: 33.8%;
-  top: 89%;
-}
-.slick-next {
-  position: absolute;
-  left: 38%;
-  top: 89%;
-}
-.slick-prev:before,
-.slick-next:before {
-  font-family: fontawesome;
-  font-size: 20px;
-  color: #fff;
-  display: block;
-  width: 40px;
-  height: 40px;
-  background: rgba(0, 0, 0, 0.2);
-  line-height: 40px;
-  border-radius: 50%;
-}
-.slick-prev:before {
-  content: "\f104";
-}
-.slick-next:before {
-  content: "\f105";
-}
-.slick-prev:hover:before,
-.slick-next:hover:before {
-  color: #222;
-  background: rgba(0, 0, 0, 0.2);
-}
-/* ########## Section: event ########## */
-.event {
-}
-.event-inner {
+  height: 100%;
   display: flex;
-  padding: 50px 0;
   justify-content: space-between;
+  align-items: center;
 }
-.event-inner img {
-  display: block;
-  width: 49.6%;
+.project-categ {
+  font-size: 1.5vw;
 }
-/* ########## Section: banner ########## */
-/* ########## Section: banner ########## */
-/* ########## Section: banner ########## */
-/* ########## Section: banner ########## */
-/* ########## Section: banner ########## */
-/* ########## Section: banner ########## */
