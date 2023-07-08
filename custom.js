@@ -1,66 +1,66 @@
-$(document).ready((function(){
+$(document).ready(function () {
   //wow
   // new WOW().init();
-  
+
   //nav
-  $('.trigger').click(function(){
-    $(this).toggleClass('active');
-    $('.gnb, body').toggleClass('active');
-  })
-  $('.gnb a').click(function(){
-    $('.trigger').removeClass('active');
-    $('.gnb').removeClass('active');
-  })
+  $(".trigger").click(function () {
+    $(this).toggleClass("active");
+    $(".gnb, body").toggleClass("active");
+  });
+  $(".gnb a").click(function () {
+    $(".trigger").removeClass("active");
+    $(".gnb").removeClass("active");
+  });
 
   //scroll-top
-  $(window).scroll(function(){
-    if($(window).scrollTop()>50){
-      $('.scroll-top').addClass('active')
-    }else{
-      $('.scroll-top').removeClass('active')
+  $(window).scroll(function () {
+    if ($(window).scrollTop() > 50) {
+      $(".scroll-top").addClass("active");
+    } else {
+      $(".scroll-top").removeClass("active");
     }
-  })
+  });
 
   //coding-slide
-  $('.slide').slick({
+  $(".slide").slick({
     dots: false,
     infinite: true,
     speed: 300,
     slidesToShow: 2,
     slidesToScroll: 1,
-    arrows:true,
+    arrows: true,
     responsive: [
       {
         breakpoint: 1299,
         settings: {
           slidesToShow: 3,
           slidesToScroll: 1,
-        }
+        },
       },
       {
         breakpoint: 700,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-        }
+        },
       },
       {
         breakpoint: 600,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
-        }
+          slidesToScroll: 1,
+        },
       },
-    ]
+    ],
   });
 
   //illustrator-slide
-  $('.illustrator-slide').slick({
+  $(".illustrator-slide").slick({
     dots: true,
     infinite: true,
-    arrows:false,
+    arrows: false,
     fade: true,
-    cssEase: 'linear',
+    cssEase: "linear",
     autoplay: true,
     autoplaySpeed: 3000,
     slidesToShow: 1,
@@ -70,11 +70,9 @@ $(document).ready((function(){
         breakpoint: 600,
         settings: {
           slidesToShow: 1,
-          slidesToScroll: 1
-        }
+          slidesToScroll: 1,
+        },
       },
-    ]
+    ],
   });
-
-})
-)
+});
