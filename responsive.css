@@ -73,7 +73,6 @@
     margin-top: 0;
     margin-bottom: 10px;
   }
-  /* ########## Section: about ########## */
   .headshot {
     margin-left: 15px;
     text-align: center;
@@ -87,28 +86,6 @@
     padding-left: 0;
     margin-left: 42px;
   }
-  /* ########## Section: skill ########## */
-  .skill-inner {
-    width: 100%;
-    padding: 0 15px;
-  }
-  .skills {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .skill-desc {
-    height: auto;
-    width: 32%;
-    margin-right: 2%;
-  }
-  .skill-desc:nth-child(3),
-  .skill-desc:nth-child(6) {
-    margin-right: 0;
-  }
-  .skill-desc:nth-child(4) {
-    margin-right: 2%;
-  }
-  /* ########## Section: mobile ########## */
   /* ########## Section: web ########## */
   .web-inner {
     width: 100%;
@@ -160,10 +137,12 @@
     margin-top: 20px;
   }
   /* ########## Section: coding ########## */
-  .coding-inner {
+  .coding-inner,
+  .design-inner {
     width: 100%;
   }
-  .codings {
+  .codings,
+  .design {
     width: 100%;
     float: none;
   }
@@ -198,10 +177,27 @@
   /* ########## Section: skill ########## */
   .skill-inner {
     width: 100%;
+    padding: 0 15px;
   }
   .introduces h2,
   .my-part > h2 {
     margin-bottom: 30px;
+  }
+  .skills {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .skill-desc {
+    height: auto;
+    width: 32%;
+    margin-right: 2%;
+  }
+  .skill-desc:nth-child(3),
+  .skill-desc:nth-child(6) {
+    margin-right: 0;
+  }
+  .skill-desc:nth-child(4) {
+    margin-right: 2%;
   }
   /* ########## Section: contact ########## */
   .contact-inner {
@@ -439,52 +435,6 @@
     margin-top: 0;
     margin-bottom: 10px;
   }
-
-  /* ########## Section: skill ########## */
-  .skill-inner {
-    width: 100%;
-  }
-  .skill-desc {
-    width: 100%;
-    float: none;
-    height: auto;
-    margin-bottom: 15px;
-  }
-  /* ########## Section: mobile ########## */
-  .mobile-inner {
-    width: 100%;
-    text-align: center;
-  }
-  .mobile-content div {
-    margin-top: 20px;
-  }
-  .mobile-img {
-    float: none;
-    width: 100%;
-    text-align: center;
-    padding: 0;
-  }
-  .mobile-img img {
-    width: 100%;
-    display: block;
-  }
-  .mobile-desc {
-    float: none;
-    width: 100%;
-    padding: 0;
-  }
-  .mobile-desc p {
-    width: 100%;
-  }
-  .mobile-desc br {
-    display: none;
-  }
-  .mobile-desc button {
-    margin-top: 20px;
-  }
-  .mobile-desc button:nth-of-type(1) {
-    margin-right: 10px;
-  }
   /* ########## Section: web ########## */
   .web-inner {
     width: 100%;
@@ -540,15 +490,18 @@
     bottom: -15px;
     height: 3px;
   }
-  /* ########## Section: coding ########## */
-  .coding-inner {
+  /* ########## Section: coding, design ########## */
+  .coding-inner,
+  .design-inner {
     width: 100%;
   }
-  .codings {
+  .codings,
+  .design {
     width: 100%;
     float: none;
   }
-  .codings h3 {
+  .codings h3,
+  .design h3 {
     font-size: 24px;
   }
   .slick-prev::before,
@@ -588,6 +541,16 @@
   }
   .project-content button {
     margin: 10px 0 40px;
+  }
+  /* ########## Section: skill ########## */
+  .skill-inner {
+    width: 100%;
+  }
+  .skill-desc {
+    width: 100%;
+    float: none;
+    height: auto;
+    margin-bottom: 15px;
   }
   /* ########## Section: contact ########## */
   .contact-inner {

@@ -54,6 +54,61 @@ $(document).ready(function () {
     ],
   });
 
+  //design-slide
+  $(".design-slide").slick({
+     dots: false,
+     infinite: true,
+     speed: 300,
+     slidesToShow: 4,
+     slidesToScroll: 1,
+     arrows: true,
+     responsive: [
+       {
+         breakpoint: 1299,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,          
+        },
+       },
+      {
+         breakpoint: 700,
+         settings: {
+           slidesToShow: 2,
+           slidesToScroll: 1,
+         },
+       },
+      {
+         breakpoint: 600,
+         settings: {
+           slidesToShow: 1,
+           slidesToScroll: 1,
+         },
+       },
+     ],
+  });
+
+  //sns-modal
+  $('.image-content .sns').click(function(){
+    var src = jQuery(this).attr("src");
+    jQuery('.modal_content').attr("src",src);
+    $('.modal, body').addClass('active');
+  })
+  $('.modal').click(function(){
+    $('.modal, body').removeClass('active');
+  })
+
+  //detail-modal
+   $('.image-content .detail').click(function(){
+     var src = jQuery(this).attr("src");
+     jQuery('.modal_content').attr("src",src);
+     $('.modal_content').addClass('detail');
+     $('.modal, body').addClass('active');
+   })
+   $('.modal').click(function(){
+    $('.modal_content').removeClass('detail');
+     $('.modal, body').removeClass('active');
+   })
+
   //illustrator-slide
   $(".illustrator-slide").slick({
     dots: true,
@@ -76,3 +131,4 @@ $(document).ready(function () {
     ],
   });
 });
+
