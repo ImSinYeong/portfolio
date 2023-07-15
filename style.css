@@ -825,6 +825,83 @@ input[id="tab5"]:checked ~ .tab-btn label:nth-child(5) p:after {
 .scroll-top i {
   font-weight: 600;
 }
+/* ########## modal ########## */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 600;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: scroll;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.modal.active {
+  display: block;
+}
+.modal_content {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 700px;
+  height: 700px;
+  border-radius: 10px;
+}
+.modal_content.detail {
+  display: block;
+  position: absolute;
+  width: 1000px;
+  height: auto;
+  border-radius: 5px;
+  left: 50%;
+  top: 50px;
+  transform: translateX(-50%);
+}
+.image-content .detail {
+  width: 100%;
+  height: auto;
+  top: 0;
+  transform: translate(-50%, 0px);
+  transition: 1.5s;
+}
+.image-content:hover .detail {
+  transform: translate(-50%, calc(-100% + 260px));
+}
+.close {
+  position: fixed;
+  right: 40px;
+  top: 40px;
+  outline: none;
+  color: #fff;
+  width: 25px;
+  height: 25px;
+  line-height: 25px;
+  display: block;
+  z-index: 800;
+  text-align: center;
+}
+.close:after {
+  content: "\f00d";
+  font-family: "fontawesome";
+  font-size: 25px;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #666;
+  left: 50%;
+  top: 50%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  animation: bs 2s infinite;
+}
+.close:hover:after {
+  background-color: #222;
+}
 /* ########## featherlight ########## */
 .featherlight .featherlight-content {
   width: 100%;
@@ -1019,71 +1096,4 @@ input[id="tab5"]:checked ~ .tab-btn label:nth-child(5) p:after {
   padding: 0;
   margin: 0;
   padding: 30px 0;
-}
-/* 모달 */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 600;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: scroll;
-  cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.7);
-}
-.modal.active {
-  display: block;
-}
-.modal_content {
-  display: block;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 700px;
-  height: 700px;
-  border-radius: 10px;
-}
-.modal_content.detail {
-  display: block;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 1000x;
-  height: 1000px;
-  border-radius: 10px;
-}
-.close {
-  position: fixed;
-  right: 40px;
-  top: 40px;
-  outline: none;
-  color: #fff;
-  width: 25px;
-  height: 25px;
-  line-height: 25px;
-  display: block;
-  z-index: 800;
-  text-align: center;
-}
-.close:after {
-  content: "\f00d";
-  font-family: "fontawesome";
-  font-size: 25px;
-  position: absolute;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  background-color: #666;
-  left: 50%;
-  top: 50%;
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-  animation: bs 2s infinite;
-}
-.close:hover:after {
-  background-color: #222;
 }
