@@ -55,7 +55,7 @@ $(document).ready(function () {
   });
 
   //design-slide
-  $(".design-slide").slick({
+  $(".design-sns .design-slide").slick({
      dots: false,
      infinite: true,
      speed: 300,
@@ -63,12 +63,12 @@ $(document).ready(function () {
      slidesToScroll: 1,
      arrows: true,
      responsive: [
-       {
-         breakpoint: 1299,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 1,          
-        },
+      {
+         breakpoint: 1000,
+         settings: {
+           slidesToShow: 3,
+           slidesToScroll: 1,
+         },
        },
       {
          breakpoint: 700,
@@ -77,16 +77,48 @@ $(document).ready(function () {
            slidesToScroll: 1,
          },
        },
-      {
-         breakpoint: 600,
-         settings: {
-           slidesToShow: 1,
-           slidesToScroll: 1,
-         },
-       },
+       {
+        breakpoint: 450,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
      ],
   });
 
+    //design-detail
+    $(".design-detailpage .design-slide").slick({
+      dots: false,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      arrows: true,
+      responsive: [
+        {
+          breakpoint: 1299,
+         settings: {
+           slidesToShow: 3,
+           slidesToScroll: 1,          
+         },
+        },
+       {
+          breakpoint: 700,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1,
+          },
+        },
+       {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
+        },
+      ],
+   });
   //sns-modal
   $('.image-content .sns').click(function(){
     var src = jQuery(this).attr("src");
