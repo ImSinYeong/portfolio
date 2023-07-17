@@ -856,9 +856,9 @@ input[id="tab5"]:checked ~ .tab-btn label:nth-child(5) p:after {
   position: absolute;
   width: 1000px;
   height: auto;
-  border-radius: 5px;
+  border-radius: 0;
   left: 50%;
-  top: 50px;
+  top: 0;
   transform: translateX(-50%);
 }
 .image-content .detail {

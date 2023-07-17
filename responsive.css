@@ -207,6 +207,14 @@
   .contact-inner h1 {
     font-size: 58px;
   }
+  /* ########## modal ########## */
+  .modal_content {
+    width: 97%;
+    height: 97%;
+  }
+  .modal_content.detail {
+    width: 100%;
+  }
   /* ########## illustrator.html ########## */
   .project-illustrator,
   .project-react {
@@ -570,6 +578,14 @@
     font-size: 14px;
     margin: 20px 0 0;
     padding-bottom: 10px;
+  }
+  /* ########## modal ########## */
+  .modal_content {
+    width: 90%;
+    height: auto;
+  }
+  .modal_content.detail {
+    width: 100%;
   }
   /* ########## slick ########## */
   .slick-next {
