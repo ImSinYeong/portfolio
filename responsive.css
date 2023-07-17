@@ -514,7 +514,8 @@
   }
   .slick-prev::before,
   .slick-next::before {
-    display: none;
+    /* display: none; */
+    /* color: #444; */
   }
   .slide-content p {
     bottom: -5px;
@@ -522,6 +523,9 @@
   }
   .slick-dots {
     margin-bottom: 10px;
+  }
+  .slide-content p {
+    display: none;
   }
   /* ########## Section: project ########## */
   .project-inner {

@@ -80,45 +80,46 @@ $(document).ready(function () {
        {
         breakpoint: 450,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 1,
           slidesToScroll: 1,
         },
       },
      ],
   });
 
-    //design-detail
-    $(".design-detailpage .design-slide").slick({
-      dots: false,
-      infinite: true,
-      speed: 300,
-      slidesToShow: 3,
-      slidesToScroll: 1,
-      arrows: true,
-      responsive: [
-        {
-          breakpoint: 1299,
+  //design-detail
+  $(".design-detailpage .design-slide").slick({
+     dots: false,
+     infinite: true,
+     speed: 300,
+     slidesToShow: 3,
+     slidesToScroll: 1,
+     arrows: true,
+     responsive: [
+       {
+        breakpoint: 1299,
          settings: {
-           slidesToShow: 3,
-           slidesToScroll: 1,          
+          slidesToShow: 3,
+          slidesToScroll: 1,          
+        },
+      },
+      {
+        breakpoint: 850,
+         settings: {
+           slidesToShow: 2,
+           slidesToScroll: 1,
          },
-        },
+      },
        {
-          breakpoint: 700,
-          settings: {
-            slidesToShow: 2,
-            slidesToScroll: 1,
-          },
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+           slidesToScroll: 1,
         },
-       {
-          breakpoint: 600,
-          settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-          },
-        },
-      ],
-   });
+       },
+     ],
+  });
+
   //sns-modal
   $('.image-content .sns').click(function(){
     var src = jQuery(this).attr("src");
