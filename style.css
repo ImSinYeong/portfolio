@@ -233,9 +233,6 @@ header {
   margin-top: 0;
   line-height: 1em;
 }
-.about-text p {
-  width: 80%;
-}
 .about-text p:before {
   content: "\f00c";
   font-family: "fontawesome";

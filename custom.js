@@ -8,8 +8,7 @@ $(document).ready(function () {
     $(".gnb, body").toggleClass("active");
   });
   $(".gnb a").click(function () {
-    $(".trigger").removeClass("active");
-    $(".gnb").removeClass("active");
+    $(".trigger,.gnb, body").removeClass("active");
   });
 
   //scroll-top
