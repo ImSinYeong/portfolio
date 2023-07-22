@@ -30,16 +30,15 @@ $(function(){
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    // autoplay: true,
+    autoplay: true,
     dots:true,
-    arrows:true,
+    arrows:false,
     centerMode: true,
     variableWidth: true,
     responsive: [
       {
         breakpoint: 1500,
         settings: {
-          arrows: false,
           centerMode: true,
           centerPadding: '40px',
           slidesToShow: 1,
